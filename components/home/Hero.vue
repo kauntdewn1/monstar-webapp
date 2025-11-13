@@ -6,7 +6,7 @@ const { handleImageError, fallbackImage } = useImageError()
 </script>
 
 <template>
-  <div class="relative h-screen bg-black overflow-hidden">
+  <div class="relative h-screen bg-black overflow-visible">
     <!-- Background Image -->
     <div class="absolute inset-0">
       <img
@@ -55,8 +55,8 @@ const { handleImageError, fallbackImage } = useImageError()
     </div>
 
     <!-- LED Panel Ticker -->
-    <div class="absolute bottom-0 w-full led-panel py-4 overflow-hidden border-t-2 border-green-500/50">
-      <div class="animate-marquee whitespace-nowrap led-text text-lg md:text-xl">
+    <div class="absolute bottom-0 left-0 right-0 w-full led-panel py-4 overflow-hidden border-t-2 border-green-500/50 z-20">
+      <div class="animate-marquee whitespace-nowrap led-text text-lg md:text-xl relative">
         <span class="mx-8">⚡ INSCRIÇÕES QUALIFIER • TEMPORADA 2026 ⚡</span>
         <span class="mx-8">⚡ INSCRIÇÕES TIMES ⚡</span>
         <span class="mx-8">⚡ STANDARDS 2026 ⚡</span>

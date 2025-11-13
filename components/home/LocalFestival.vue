@@ -16,7 +16,7 @@ const { handleImageError, fallbackImage } = useImageError()
         <!-- Image -->
         <div class="rounded-lg overflow-hidden shadow-2xl">
           <img
-            :src="getImage('logos/sesi.png')"
+            :src="getImage('outros/FOTO-FERREIRA.png')"
             alt="SESI Clube Ferreira Pacheco"
             class="w-full h-auto"
             loading="lazy"

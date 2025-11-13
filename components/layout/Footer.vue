@@ -8,11 +8,8 @@ const { handleImageError, fallbackImage } = useImageError()
     <div class="max-w-7xl mx-auto">
       <!-- Patrocinadores Section -->
       <section id="patrocinadores" class="mb-12">
-        <h2 class="text-4xl font-bold text-center mb-4">
-          APRESENTADOR OFICIAL
-        </h2>
         <p class="text-xl text-center text-yellow-400 mb-8">
-          PATROCINADORES OURO
+          + PARCEIROS +
         </p>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-center">
@@ -35,13 +32,13 @@ const { handleImageError, fallbackImage } = useImageError()
       <!-- Footer Info -->
       <div class="text-center">
         <div class="mb-6">
-          <svg viewBox="0 0 60 60" class="w-16 h-16 mx-auto mb-4">
-            <polygon
-              points="30,5 36,24 54,24 39,36 45,54 30,42 15,54 21,36 6,24 24,24"
-              fill="#FFD700"
-            />
-          </svg>
-          <p class="text-2xl font-bold">MONSTAR GAMES</p>
+          <img
+            src="/logo_oficial.png"
+            alt="Monstar Games"
+            class="w-16 h-16 mx-auto object-contain"
+            loading="lazy"
+            @error="(e) => handleImageError(e, fallbackImage)"
+          />
         </div>
 
         <p class="text-gray-400 mb-4">
