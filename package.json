@@ -1,0 +1,21 @@
+{
+  "name": "monstar-webapp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@vueuse/core": "^10.11.0",
+    "lucide-vue-next": "^0.344.0",
+    "nuxt": "^3.20.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  }
+}
