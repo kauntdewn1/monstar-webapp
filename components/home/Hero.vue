@@ -52,24 +52,17 @@ const { handleImageError, fallbackImage } = useImageError()
         CLIQUE AQUI!
         <ExternalLink :size="24" />
       </a>
-
-      <!-- Scroll Indicator -->
-      <div class="absolute bottom-10 animate-bounce">
-        <div class="w-8 h-12 border-2 border-white rounded-full flex items-start justify-center p-2">
-          <div class="w-1 h-3 bg-white rounded-full" />
-        </div>
-      </div>
     </div>
 
-    <!-- Animated Ticker -->
-    <div class="absolute bottom-0 w-full bg-gradient-to-r from-pink-600 to-purple-600 py-3 overflow-hidden">
-      <div class="animate-marquee whitespace-nowrap text-white font-bold text-lg">
-        <span class="mx-8">INSCRIÇÕES QUALIFIER • TEMPORADA 2026</span>
-        <span class="mx-8">INSCRIÇÕES TIMES</span>
-        <span class="mx-8">STANDARDS 2026</span>
-        <span class="mx-8">INSCRIÇÕES QUALIFIER • TEMPORADA 2026</span>
-        <span class="mx-8">INSCRIÇÕES TIMES</span>
-        <span class="mx-8">STANDARDS 2026</span>
+    <!-- LED Panel Ticker -->
+    <div class="absolute bottom-0 w-full led-panel py-4 overflow-hidden border-t-2 border-green-500/50">
+      <div class="animate-marquee whitespace-nowrap led-text text-lg md:text-xl">
+        <span class="mx-8">⚡ INSCRIÇÕES QUALIFIER • TEMPORADA 2026 ⚡</span>
+        <span class="mx-8">⚡ INSCRIÇÕES TIMES ⚡</span>
+        <span class="mx-8">⚡ STANDARDS 2026 ⚡</span>
+        <span class="mx-8">⚡ INSCRIÇÕES QUALIFIER • TEMPORADA 2026 ⚡</span>
+        <span class="mx-8">⚡ INSCRIÇÕES TIMES ⚡</span>
+        <span class="mx-8">⚡ STANDARDS 2026 ⚡</span>
       </div>
     </div>
   </div>

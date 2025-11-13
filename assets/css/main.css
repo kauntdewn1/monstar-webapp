@@ -21,5 +21,58 @@
   .animate-fade-in {
     animation: fade-in 1s ease-out;
   }
+
+  /* LED Panel Effect */
+  .led-panel {
+    background: #000;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .led-panel::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      repeating-linear-gradient(0deg, rgba(0, 255, 0, 0.03) 0px, transparent 1px, transparent 2px, rgba(0, 255, 0, 0.03) 3px),
+      repeating-linear-gradient(90deg, rgba(0, 255, 0, 0.03) 0px, transparent 1px, transparent 2px, rgba(0, 255, 0, 0.03) 3px);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .led-panel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 255, 0, 0.1) 50%, transparent 100%);
+    animation: led-scan 2s linear infinite;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .led-text {
+    color: #00ff00;
+    text-shadow: 
+      0 0 5px #00ff00,
+      0 0 10px #00ff00,
+      0 0 15px #00ff00,
+      0 0 20px #00ff00,
+      0 0 35px #00ff00,
+      0 0 40px #00ff00;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+  }
+
+  @keyframes led-scan {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
 }
 
