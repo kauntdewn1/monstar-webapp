@@ -19,7 +19,7 @@ const { handleImageError, fallbackImage } = useImageError()
           <div
             v-for="(sponsor, idx) in patrocinadores"
             :key="idx"
-            class="bg-white p-4 md:p-6 rounded-lg flex items-center justify-center hover:scale-105 transition-transform h-24 md:h-32"
+            class="bg-gray-900 border border-gray-700 p-4 md:p-6 rounded-lg flex items-center justify-center hover:scale-105 hover:border-gray-500 transition-all h-24 md:h-32"
           >
             <img
               :src="sponsor.logo"
