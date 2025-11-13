@@ -1,11 +1,9 @@
 export const usePatrocinadores = () => {
-  const { getImage } = useImage()
-
   const patrocinadores = [
-    { name: 'AUDAX', logo: getImage('logos/AUDAX-1536x244.png'), tier: 'ouro' },
-    { name: 'Linq Telecom', logo: getImage('logos/linq.png'), tier: 'ouro' },
-    { name: 'SESI', logo: getImage('logos/sesi.png'), tier: 'principal' },
-    { name: 'Pood', logo: getImage('logos/Pood.png'), tier: 'prata' }
+    { name: 'Digital Score', logo: '/assets/icons/digitalscore.png', tier: 'ouro' },
+    { name: 'FLAMPARK', logo: '/assets/icons/FLAMPARK.png', tier: 'ouro' },
+    { name: 'Formação', logo: '/assets/icons/formacao-300x72.png', tier: 'ouro' },
+    { name: 'REING', logo: '/assets/icons/REING.png', tier: 'ouro' }
   ]
 
   return { patrocinadores }

@@ -15,16 +15,16 @@ const { handleImageError, fallbackImage } = useImageError()
           PATROCINADORES OURO
         </p>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-center">
           <div
             v-for="(sponsor, idx) in patrocinadores"
             :key="idx"
-            class="bg-white p-6 rounded-lg flex items-center justify-center hover:scale-105 transition-transform"
+            class="bg-white p-4 md:p-6 rounded-lg flex items-center justify-center hover:scale-105 transition-transform h-24 md:h-32"
           >
             <img
               :src="sponsor.logo"
               :alt="sponsor.name"
-              class="max-w-full max-h-24 object-contain filter grayscale hover:grayscale-0 transition-all"
+              class="max-w-full max-h-full w-auto h-full object-contain brightness-0 invert transition-all"
               loading="lazy"
               @error="(e) => handleImageError(e, fallbackImage)"
             />
